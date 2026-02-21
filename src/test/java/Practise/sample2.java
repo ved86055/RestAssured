@@ -1,5 +1,6 @@
 package Practise;
 
+import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -32,15 +33,16 @@ public class sample2 {
         data.put("userId", "Scrum mAster");
 
 
-        id = given()
+        Response res = given()
                 .contentType("application/json")
                 .body(data)
 
 
                 .when()
-                .post("https://jsonplaceholder.typicode.com/posts")
-                .jsonPath().getInt("id");
-        System.out.println("id captured is " + id);
+                .post("https://jsonplaceholder.typicode.com/posts");
+
+               int idint= res.jsonPath().getInt("id");
+        System.out.println("id captured is " + idint);
     }
 
     @Test(priority=3,dependsOnMethods = "createUser")
