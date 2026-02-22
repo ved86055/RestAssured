@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <test name="API_chaining" verbose="2" preserve-order="true">
+
+        <classes>
+
+            <class name="API_chaining.create_user">
+                <methods>
+                    <include name="createUser"/>
+                </methods>
+            </class>
+
+            <class name="API_chaining.getUser">
+                <methods>
+                    <include name="getUser"/>
+                </methods>
+            </class>
+
+            <class name="API_chaining.update_user">
+                <methods>
+                    <include name="updateUser"/>
+                </methods>
+            </class>
+
+            <class name="API_chaining.delete_user">
+                <methods>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>
