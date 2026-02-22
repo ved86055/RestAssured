@@ -36,13 +36,6 @@ public class sample5
                         .body("courses[0]",equalTo("c"))
                         .body("courses[1]",equalTo("c++"));
 
-
-
-
-
-
-
-
             }
 
 }

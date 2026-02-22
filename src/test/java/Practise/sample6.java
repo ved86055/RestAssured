@@ -22,10 +22,5 @@ public class sample6
 
 
 
-
-
-
-
-
     }
 }

@@ -42,14 +42,6 @@ public class sample3
                 .header("content-type",equalTo("application/json; charset=utf-8"));
 
 
-
-
-
-
-
-
-
-
     }
 }
 
