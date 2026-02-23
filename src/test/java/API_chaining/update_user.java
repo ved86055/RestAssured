@@ -19,8 +19,13 @@ public class update_user
        data.put("email",f.internet().emailAddress());
        data.put("status","inactive");
 
+
        String bearerToken="Bearer e7912c68171c60e4fbe1d5bcb209c777bbd37dcdac6bc76b0875a8554a1e799e";
-       int id= (Integer) context.getAttribute("user_id");
+
+
+       // int id= (Integer) context.getAttribute("user_id");
+       int id= (Integer) context.getSuite().getAttribute("user_id");
+
        given()
                .pathParam("id",id)                     //captured id
                .header("Authorization",bearerToken)

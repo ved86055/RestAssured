@@ -3,36 +3,28 @@
 
 <suite name="All Test Suite">
 
-    <test name="API_chaining" verbose="2" preserve-order="true">
-
+    <test name="Create User Test">
         <classes>
-
-            <class name="API_chaining.create_user">
-                <methods>
-                    <include name="createUser"/>
-                </methods>
-            </class>
-
-            <class name="API_chaining.getUser">
-                <methods>
-                    <include name="getUser"/>
-                </methods>
-            </class>
-
-            <class name="API_chaining.update_user">
-                <methods>
-                    <include name="updateUser"/>
-                </methods>
-            </class>
-
-            <class name="API_chaining.delete_user">
-                <methods>
-                    <include name="deleteUser"/>
-                </methods>
-            </class>
-
+            <class name="API_chaining.create_user"/>
         </classes>
+    </test>
 
+    <test name="Get User Test">
+        <classes>
+            <class name="API_chaining.getUser"/>
+        </classes>
+    </test>
+
+    <test name="Update User Test">
+        <classes>
+            <class name="API_chaining.update_user"/>
+        </classes>
+    </test>
+
+    <test name="Update delete Test">
+        <classes>
+            <class name="API_chaining.delete_user"/>
+        </classes>
     </test>
 
 </suite>

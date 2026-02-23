@@ -34,7 +34,9 @@ public class create_user
                  .jsonPath().getInt("id");
         System.out.println("captured id is " + id );
 
-        context.setAttribute("user_id",id);
+       // context.setAttribute("user_id",id); This is at test level onkly & not suite level
+
+        context.getSuite().setAttribute("user_id",id);
 
     }
 }
